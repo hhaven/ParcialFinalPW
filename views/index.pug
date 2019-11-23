@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  include header.pug
+  include main.pug
+  include footer.pug
+  
+
+  // Wrapper
+  #wrapper
+
+
+    // SONG LIST
+    h2 Song List
+    #songList
+      table
+        thead
+          th Song Name
+          th Link
+          th Delete?
+        tbody
+    // /SONG LIST
+
+    // ADD song
+    h2 Add song
+    #addSong
+      fieldset
+        input#inputsongname(type='text', placeholder='Song Name')
+        input#inputsonglink(type='text', placeholder='Song Link')
+        button#btnAddSong Add song
+    // /ADD song
+
+  // /WRAPPER
+
+  
